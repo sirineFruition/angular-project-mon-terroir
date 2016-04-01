@@ -1,0 +1,34 @@
+<div class="container" >
+    <div class="row">
+        <div >
+            <div class="input-group">
+                <input id="searchbar" type="text" class="form-control validate filter-input" placeholder="Search for..." [(ngModel)]=query (keyup)=filter()>
+              <span class="input-group-btn">
+        <button class="btn btn-default" type="button">Go!</button>
+      </span>
+            </div>
+        </div>
+    </div>
+    <div class="suggestions  " *ngIf="filteredList.length > 0">
+        <ul class="list-group" *ngFor="#item of filteredList" >
+            <li  class="list-group-item">
+                <p (click)="select(item)">{{item}}</p>
+            </li>
+        </ul>
+    </div>
+    <div *ngIf="selected">
+        <h2>
+            Search results:
+        </h2>
+        <ul class="list-group" class="searchresults">
+
+            <li  class="list-group-item"
+            >
+                <p>{{query}} <button type="button" id="addbutton" class="btn btn-default" aria-label="Right Align"  [class.selected]="terroir === selectedTerroir" (click)="onAdd(query)">
+                    <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
+                </button></p>
+
+            </li>
+        </ul>
+    </div>
+</div>

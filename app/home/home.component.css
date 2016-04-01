@@ -1,0 +1,297 @@
+
+#header {
+
+    height: 100px;
+    background-color: rgba(255, 255, 255, 1);
+    left: 0;
+    width: 100%;
+}
+#logoFruition{
+    float: right;
+}
+
+#logoFruition img{
+    width: 40%;
+    height: auto;
+    bottom: 5px;
+}
+
+#header h1  {
+   color: #027353;
+    font-family: Helvetica;
+    padding: 10px 0px 10px 20px;
+}
+
+
+
+#header .router-link-active {
+    color: #81be00;
+}
+
+#header .color {
+    display: block;
+    height: 4px;
+    position: absolute;
+    top: 100%;
+    width: 100%;
+}
+
+#terroirname{
+    height: 60px;
+    background-color: rgba(255,255,255,0.4);
+    background-size: cover;
+}
+
+#terroirname h1{
+    padding: 5px 20px 20px 30px;
+  color: #fff;
+
+}
+
+#temperature{
+    height: 60px;
+    background-color: rgba(255,255,255,0.4);
+    background-size: cover;
+}
+
+#temperature h1{
+    padding: 5px 20px 20px 30px;
+    color: #fff;
+    font-weight: 100;
+}
+#map{
+
+    background-size: cover;
+margin-top:  15px;
+    height: 320px;
+    background-color: rgba(255,255,255,0.4);
+}
+.center {
+    margin: auto;
+    width: 100%;
+    padding: 1% 1% 0% 1% ;
+}
+
+ .sebm-google-map-container {
+
+    height: 300px;
+    width: 98%;
+}
+
+#wind{
+    height: 160px;
+    background-color: rgba(255,255,255,0.4);
+    background-size: cover;
+}
+
+#wind p{    font-size: large;
+    padding: 5px 20px 20px 30px;
+    color: #fff;
+    font-weight: 100;
+
+
+}#wind h1{
+     padding: 5px 20px 0px 30px;
+     color: #fff;
+     font-weight: 100;
+ }
+
+
+
+#morewinddata {
+   float: right;
+    padding-right: 10%;
+}
+#rain{
+
+    width: 100%;
+    height: 160px;
+    background-color: rgba(255,255,255,0.4);
+    background-size: cover;
+}
+
+#rain p{    font-size: large;
+    padding: 0px 20px 20px 30px;
+    color: #fff;
+    font-weight: 100;
+}
+
+#rain h1{
+    width: 100%;
+     padding: 5px 20px 0px 30px;
+     color: #fff;
+     font-weight: 100;
+ }
+
+#moreraindata {
+    float: right;
+    padding-right: 10%;
+
+}
+
+#water{
+    height: 160px;
+    background-color: rgba(255,255,255,0.4);
+    background-size: cover;
+}
+
+#water p{    font-size: large;
+    padding: 0px 20px 20px 30px;
+    color: #fff;
+    font-weight: 100;
+
+
+}#water h1{
+     padding: 5px 20px 0px 30px;
+     color: #fff;
+     font-weight: 100;
+ }
+
+
+
+#morewaterdata {
+    float: right;
+    padding-right: 10%;
+}
+
+/* menuu********
+*/
+
+nav#slide-menu {
+  position: fixed;
+  top: 0;
+  left: -100px;
+  bottom: 0;
+  display: block;
+  float: left;
+  width: 100%;
+  max-width: 284px;
+  height: 100%;
+  -moz-transition: all 300ms;
+  -webkit-transition: all 300ms;
+  transition: all 300ms;
+}
+nav#slide-menu > ul {
+  display: block;
+  margin: 40px;
+  padding: 0;
+  list-style: none;
+  opacity: 0.5;
+  -moz-transition: all 300ms;
+  -webkit-transition: all 300ms;
+  transition: all 300ms;
+}
+nav#slide-menu > ul li {
+  color: #dfe5eb;
+  padding: 6px 0;
+  cursor: pointer;
+}
+nav#slide-menu > ul li:hover {
+  color: #59e9df;
+}
+nav#slide-menu > ul li:before {
+  font-family: "ico";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  color: #59e9df;
+  margin-right: 12px;
+  text-align: center;
+  font-variant: normal;
+  font-size: 0.75em;
+  text-transform: none;
+  line-height: 1em;
+}
+
+nav#slide-menu > ul li i{
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  color: #59e9df;
+  margin-right: 12px;
+  text-align: center;
+  font-variant: normal;
+  font-size: 0.75em;
+  text-transform: none;
+  line-height: 1em;
+}
+nav#slide-menu > ul li.sep {
+  margin-top: 7px;
+  padding-top: 14px;
+  border-top: 1px solid #6b7b8d;
+}
+
+.container.menu-active nav#slide-menu {
+  left: 0px;
+}
+
+.container.menu-active nav#slide-menu ul {
+  left: 0px;
+  opacity: 1;
+}
+
+.majorpointslegends{
+
+    border:none;
+}
+
+
+.majorpoints {
+    border:none;
+
+}
+
+.fieldset{
+    border:none;
+
+}
+
+.majorpoints :hover{
+    cursor: pointer;
+
+
+}
+
+.majorpoints {
+    padding: 0px;
+    background-color: rgba(255,255,255,0.4);
+
+}
+.majorpoints .hiders {
+    float: right;
+    margin :10px 0px 10px 0px;
+
+}
+.majorpoints .hiders p {
+    color: #fff;
+    font-weight: 100;
+    font-size: 1.2em;
+
+
+}
+.majorpoints  {
+    margin :10px 0px 10px 0px;
+
+}
+.majorpoints h2 {
+    padding: 5px 20px 0px 30px;
+    color: #fff;
+    font-family: Helvetica;
+}
+.majorpoints h2 img{
+    width:40px;    height: auto; float: right;  padding: 10px 10px 10px 0px;
+}
+.container {
+    margin-top: 5%;
+    padding: 0% 5% 5% 5%;
+
+}
+.sec {
+    border-radius: 5px;
+}

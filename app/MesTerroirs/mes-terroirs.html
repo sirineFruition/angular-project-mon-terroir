@@ -1,0 +1,13 @@
+<div class ="container">
+<h1> Mes Terroirs</h1>
+<ul class="list-group" class="terroirs">
+
+    <li  class="list-group-item" *ngFor="#terroir of _userService.User.terroirs" >
+       <p>{{terroir}}
+        <button type="button" id="deletebutton" class="btn btn-default" aria-label="Right Align"  [class.selected]="terroir === selectedTerroir" (click)="onSelect(terroir)">
+            <span class="glyphicon glyphicon-trash" aria-hidden="true"></span>
+        </button>
+       </p>
+    </li>
+</ul>
+</div>

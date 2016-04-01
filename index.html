@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <base href="/">
+    <script src="node_modules/angular2/bundles/angular2-polyfills.js"></script>
+    <script src="node_modules/systemjs/dist/system.src.js"></script>
+    <script src="node_modules/rxjs/bundles/Rx.js"></script>
+    <script src="node_modules/angular2/bundles/angular2.dev.js"></script>
+    <script src="node_modules/angular2/bundles/router.dev.js"></script>
+    <script src="node_modules/angular2-google-maps/bundles/angular2-google-maps.js"></script>
+    <script src="node_modules/angular2/bundles/http.dev.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="app/extra.js"></script>
+    <link rel="stylesheet" href="../node_modules/angular-material/angular-material.css"/>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>    <link rel="stylesheet" type="text/css" href="style.css">
+    <link
+            href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css"
+            rel="stylesheet" type='text/css'>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+
+
+    <script>
+        System.config({packages: {app: {format: 'register', defaultExtension: 'js'},
+            '@angular2-material/core': {
+                format: 'cjs',
+                defaultExtension: 'js',
+                main: 'core.js'
+            }
+
+        }
+
+        });
+        System.import('app/boot')
+                .then(null, console.error.bind(console));
+    </script>
+</head>
+
+<body>
+<div class="container center">
+
+
+    <div id="bigcontainer">
+        <div id="content">
+
+
+
+
+            <app>Loading...</app>
+
+        </div>
+    </div>
+</div>
+
+
+<script src="http://anijs.github.io/lib/anijs/anijs.js"></script>
+<script src="http://anijs.github.io/lib/anijs/helpers/dom/anijs-helper-dom.js"></script>
+<script src="../node_modules/angular/angular.js"></script>
+<script src="../node_modules/angular-animate/angular-animate.js"></script>
+<script src="../node_modules/angular-aria/angular-aria.js"></script>
+<script type="text/javascript" src="../node_modules/angular-material/angular-material.js"></script>
+<script type="text/javascript">
+    angular
+            .module('starterApp', ['ngMaterial', 'users'])
+            .config(function($mdThemingProvider, $mdIconProvider){
+                $mdIconProvider
+                        .defaultIconSet("./assets/svg/avatars.svg", 128)
+                        .icon("menu"       , "./assets/svg/menu.svg"        , 24)
+                        .icon("share"      , "./assets/svg/share.svg"       , 24)
+                        .icon("google_plus", "./assets/svg/google_plus.svg" , 512)
+                        .icon("hangouts"   , "./assets/svg/hangouts.svg"    , 512)
+                        .icon("twitter"    , "./assets/svg/twitter.svg"     , 512)
+                        .icon("phone"      , "./assets/svg/phone.svg"       , 512);
+                $mdThemingProvider.theme('default')
+                        .primaryPalette('brown')
+                        .accentPalette('red');
+            });
+</script>
+</body>
+</html>

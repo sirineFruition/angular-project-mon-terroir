@@ -1,0 +1,87 @@
+
+
+
+#header {
+
+    margin-top: 2px;
+    height: 10%;
+    background-color: rgba(255, 255, 255, 1);
+    position: fixed;
+
+    left: 0;
+
+    width: 100%;
+}
+#logoFruition{
+    float: right;
+}
+
+#logoFruition img{
+    width: 35%;
+    height: auto;
+    padding: 2% 10% 1% 0%;
+}
+#header h1#logo {
+
+    float: left;
+    margin-top: 20px;
+    margin-left: 10%;
+}
+
+
+
+
+
+#header .color {
+    display: block;
+    height: 4px;
+    position: absolute;
+    top: 100%;
+    width: 100%;
+}
+
+#header #menu {
+    background-color: transparent;
+    background-image: none;
+    float: right;
+    margin-top: 2%;
+}
+
+
+
+
+.color {
+    background-color: #fff ;
+}
+
+.shadow {
+    background: url(../images/top-shadow.png) repeat-x;
+    height: 35px;
+    position: fixed;
+    top: 68px;
+    width: 100%;
+}
+
+
+#menu {
+    margin-top: 10px;
+}
+.jumbotron {
+    padding-top: 30px;
+
+    margin-top: 30px;
+    color: inherit;
+     background-color: rgba(255,255,255,0.5);
+    box-shadow:-5px 5px 5px -2px #777777;
+}
+li#signout :hover{
+    background-color: rgba(255,255,255, 0.5);
+    border : transparent;
+
+}
+#signout a {
+    background-color : transparent;
+    color: #337ab7;
+    text-decoration: none;
+
+}

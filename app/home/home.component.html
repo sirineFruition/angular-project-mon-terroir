@@ -1,0 +1,88 @@
+<div class="container">
+<div class="sec" id="header">
+
+    <h1> Mon Terroir
+        <div id="logoFruition">
+            <img src="images/logofruition.png">
+        </div>
+    </h1>
+</div>
+
+<div class="sec" id="terroirname">
+    <h1>
+        {{ tname }} <img src="/images/ic_my_location_48px-128.png"
+                         style=" width:40px;    height: auto; float: right;  padding: 10px 10px 10px 0px">
+
+    </h1>
+</div>
+
+<div class="sec" id="temperature">
+    <h1>
+        Temperature: {{ ttemp }} °C <img src="/images/thermometer-512%20(1).png"
+                                         style=" width:40px;    height: auto; float: right;  padding: 10px 10px 10px 0px">
+    </h1>
+</div>
+
+<div class="sec" id="map">
+    <div class=" center">
+        <sebm-google-map [latitude]="lat" [longitude]="lng">
+        </sebm-google-map>
+    </div>
+</div>
+<div class="sec">
+    <fieldset class="majorpoints" onClick="showmoreTemp()">
+        <legend class="majorpointslegend"></legend>
+        <h2 >
+            Temperature {{ttemp}} <img src="images/thermometer-512 (1).png"> °C
+        </h2>
+        <div class="hiders"style="display: none" >
+            <p>some more data<br/>
+            <p >some more data <br/>
+            <p> some more data></p>
+        </div>
+    </fieldset>
+</div>
+
+<div class="sec">
+    <fieldset class="majorpoints" onClick="showmoreTemp()">
+        <legend class="majorpointslegend"></legend>
+
+        <h2 >
+            Chance of rain {{train}} <img src="images/white-rain-256.png"> %
+        </h2>
+        <div class="hiders" style="display: none">
+            <p>some more data<br/>
+            <p >some more data <br/>
+            <p> some more data></p>
+        </div>
+    </fieldset>
+</div>
+<div class="sec">
+    <fieldset class="majorpoints" onClick="showmoreTemp()">
+        <legend class="majorpointslegend"></legend>
+        <h2 >
+            Water {{twater}} <img src="images/water-512.png"> % </h2>
+        <div class="hiders" style="display: none">
+            <p> some more data.<br/>
+                some more data.<br/>
+                some more data.</p>
+        </div>
+    </fieldset>
+</div>
+
+<div class="sec">
+    <fieldset class="majorpoints" onClick="showmoreTemp()">
+        <legend class="majorpointslegend"></legend>
+        <h2 >
+            Wind {{twind}} <img src="images/wind-turbine-icon-22940.png"> Kmph
+        </h2>
+        <div class="hiders" style="display: none">
+
+            <p> some more data.<br/>
+                some more data.<br/>
+                some more data.</p>
+        </div>
+    </fieldset>
+</div>
+
+</div>

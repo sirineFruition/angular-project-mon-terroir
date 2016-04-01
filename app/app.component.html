@@ -1,0 +1,15 @@
+
+<div class="jumbotron">
+  <h1>Mon Terroir </h1>
+  <p>L'essentiel de votre terroir en 1 clic</p>
+</div>
+
+<ul class="nav nav-tabs"  data-tabs="tabs" id="menu">
+  <li role="presentation" > <a data-toggle="tab" [routerLink]="['Home']">Home</a></li>
+  <li role="presentation"> <a data-toggle="tab" [routerLink]="['MesTerroirs']">Mes Terroirs</a></li>
+  <li role="presentation"  >  <a data-toggle="tab" [routerLink]="['TypeAhead']">Search</a></li>
+  <li id ="signout" role="presentation" style="float: right"> <a   class="btn btn-default"  role="button">Sign Out <span class="glyphicon glyphicon-off" aria-hidden="true"> </span></a>  </li>
+</ul>
+  <router-outlet></router-outlet>
+
+

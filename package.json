@@ -1,0 +1,34 @@
+{
+  "name": "angular2-website-routes",
+  "version": "0.0.1",
+  "license": "SEE LICENSE IN LICENSE",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/simpulton/angular2-website-routes.git"
+  },
+  "scripts": {
+    "tsc": "tsc",
+    "tsc:w": "tsc -w",
+    "lite": "lite-server",
+    "start": "concurrent \"npm run tsc:w\" \"npm run lite\" ",
+    "typings": "typings"
+  },
+  "dependencies": {
+    "@angular2-material/button": "^2.0.0-alpha.1",
+    "@angular2-material/checkbox": "^2.0.0-alpha.1",
+    "@angular2-material/core": "^2.0.0-alpha.1",
+    "angular2": "^2.0.0-beta.7",
+    "angular2-google-maps": "^0.8.1",
+    "es6-promise": "^3.0.2",
+    "es6-shim": "^0.35.0",
+    "reflect-metadata": "0.1.2",
+    "rxjs": "5.0.0-beta.2",
+    "systemjs": "0.19.20"
+  },
+  "devDependencies": {
+    "concurrently": "^1.0.0",
+    "lite-server": "^1.2.0",
+    "typescript": "^1.7.3",
+    "typings": "^0.6.8"
+  }
+}

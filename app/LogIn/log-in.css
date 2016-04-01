@@ -1,0 +1,24 @@
+.buttondemoBasicUsage section {
+    background: #f7f7f7;
+    border-radius: 3px;
+    text-align: center;
+    margin: 1em;
+    position: relative !important;
+    padding-bottom: 10px; }
+.buttondemoBasicUsage md-content {
+    margin-right: 7px; }
+.buttondemoBasicUsage section .md-button {
+    margin-top: 16px;
+    margin-bottom: 16px; }
+.buttondemoBasicUsage .label {
+    position: absolute;
+    bottom: 5px;
+    left: 7px;
+    font-size: 14px;
+    opacity: 0.54; }
+.container {
+    margin-top: 5%;
+    padding: 0% 5% 5% 5%;
+    background-color: rgba(255,255,255,0.5);
+    border-radius: 5px;
+}
